@@ -1,4 +1,4 @@
-const apiKey = "YOUR_API_KEY";
+const apiKey = "6f49b0d372e46afd7003341110fe5c01";
 const city = "Putrajaya";
 
 async function getWeather() {

@@ -1,56 +1,84 @@
-body {
-  margin: 0;
-  font-family: Arial;
-  background: radial-gradient(circle, #0f172a, #020617);
-  color: white;
-  text-align: center;
+/* style.css */
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#050816;
+    color:white;
 }
 
-.container {
-  padding: 30px;
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
 }
 
-.title {
-  font-size: 28px;
-  letter-spacing: 2px;
-  color: #38bdf8;
-  text-shadow: 0 0 10px #38bdf8;
+h1,h2{
+    text-align:center;
+    color:#00eaff;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  margin-top: 30px;
+.search-box{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+    justify-content:center;
+    flex-wrap:wrap;
 }
 
-.card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(56,189,248,0.3);
-  padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(56,189,248,0.2);
-  backdrop-filter: blur(10px);
-  transition: 0.3s;
+input{
+    padding:12px;
+    width:250px;
+    border:none;
+    border-radius:10px;
 }
 
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 25px #38bdf8;
+button{
+    padding:12px 18px;
+    border:none;
+    border-radius:10px;
+    background:#00eaff;
+    cursor:pointer;
+    font-weight:bold;
 }
 
-.card h3 {
-  color: #94a3b8;
+.weather-card{
+    background:#0c1327;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 0 20px #00eaff55;
 }
 
-.card p {
-  font-size: 24px;
-  color: #38bdf8;
-  margin-top: 10px;
+.main-temp{
+    font-size:60px;
+    text-align:center;
+    color:#00eaff;
 }
 
-.footer {
-  margin-top: 40px;
-  font-size: 12px;
-  color: #64748b;
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+    gap:10px;
+    margin-top:20px;
+}
+
+.box{
+    background:#111c36;
+    padding:15px;
+    border-radius:15px;
+    text-align:center;
+}
+
+#forecast,#hourly{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+    gap:10px;
+    margin-top:15px;
+}
+
+.day{
+    background:#0c1327;
+    padding:15px;
+    border-radius:15px;
+    text-align:center;
 }
